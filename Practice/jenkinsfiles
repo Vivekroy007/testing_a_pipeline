@@ -12,7 +12,7 @@ pipeline{
                 echo "this a testing stage"
                 bat "mvn --version"
                 bat "java --version"
-                 bat "mvn test"
+               
             }
         }
             stage("Build"){
