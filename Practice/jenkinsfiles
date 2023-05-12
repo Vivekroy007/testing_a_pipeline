@@ -12,11 +12,13 @@ pipeline{
                 echo "this a testing stage"
                 bat "mvn --version"
                 bat "java --version"
+                 bat "mvn test"
             }
         }
             stage("Build"){
             steps{
                 echo "this a building stage"
+               
             }
          }
             stage("Deploy to test"){
